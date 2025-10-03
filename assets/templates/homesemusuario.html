@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARTA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class = "body-home">
+
+    <!-- Header -->
+    <header class="header">
+
+        <img class="logo-cabecalho" src="assets/img/logo.png" alt="Logo da SPARTA">
+
+        <nav class="nav-home-sem">
+            <a href="{{ url_for('login') }}">Login</a>
+          <a href="{{ url_for('Cadastro') }}">Matricule-se</a>
+        </nav>
+    </header>
+
+    <!-- Slogan Section -->
+   <div class = "banner">
+        <img class="logodobanner" src="assets/img/Logovermelha.png" alt="Logo da SPARTA no banner">
+        <p class = "slogan">Treino insano, resultado espartano</p>
+    </div>
+    <!-- Por que escolher -->
+    <section class="why">
+        <h2>Por quê nos escolher?</h2>  
+        <p>
+            Nossos espaços reúnem o que há de melhor e mais moderno no mundo fitness, proporcionando uma experiência única para você. Na <span style="color: red;"> SPARTA </span>, você encontra equipamentos de última geração e todas as conveniências necessárias para manter sua rotina de treinos com qualidade e motivação.
+        </p>
+    </section>
+
+    <!-- Cards de modalidades -->
+    <section class="cards-home-sem">
+        <div class="card-home-sem">
+            <img src="assets/img/equipamentos.png" alt="Imagem de equipamentos da academia">
+            <h3>EQUIPAMENTOS DE PONTA</h3>
+        </div>
+        <div class="card-home-sem">
+            <img src="assets/img/aulas.png" alt="Imagem de pessoa praticando uma aula">
+            <h3>AULAS EXCLUSIVAS</h3>
+        </div>
+        <div class="card-home-sem">
+            <img src="assets/img/modalidades.png" alt="Imagem representando diversas modalidades">
+            <h3>AMPLAS MODALIDADES</h3>
+        </div>
+        <div class="card-home-sem">
+            <img src="assets/img/professores.png" alt="Imagem de professores especializados">
+            <h3>PROFESSORES ESPECIALIZADOS</h3>
+        </div>
+    </section>
+
+    <!-- Exame de Composição Corporal -->
+    <section class="exame">
+        <div>
+            <p class="descricao-exame">Nós disponibilizamos acesso ao exame de <strong>Composição Corporal</strong>.</p>
+            <h2>Composição Corporal</h2>
+            <p class="texto-do-exame">Este exame é fundamental para avaliar a composição corporal, fornecendo estimativas precisas sobre a massa magra, gordura corporal, água corporal total e outros parâmetros essenciais. Com esses dados, é possível obter uma visão mais clara do seu estado nutricional e de saúde.</p>
+            <p class="matricula-exame">MATRICULE-SE E TENHA ACESSO</p>
+        </div>
+        <div>
+             <img src="assets/img/Logovermelha.png" alt="Logo da SPARTA">
+        </div>
+    </section>
+
+    <!-- Nossos serviços -->
+       <section class="modalidades">
+        <div class="modalidades-info">
+            <h2>Veja nossas diversas modalidades</h2>
+            <p>
+                Conheça as aulas que a nossa academia oferece. Além da musculação, temos diversas modalidades que se encaixam no seu estilo e ajudam você a alcançar o seu objetivo.
+            </p>
+        </div>
+        <a href="aulas-disponiveis.html" class="btn-modalidades">ABRIR NOSSOS SERVIÇOS</a>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios">
+        <h2>Os 4 Principais Motivos para começar a Treinar ainda hoje!</h2>
+        <div class="beneficios-coluna1">
+            <div class="beneficio">
+                <img src="assets/img/icone-coracao.png" alt="icone-coracao">
+                <h3>Melhoria da Saúde</h3>
+                <p> Praticar exercícios regularmente fortalece o coração, melhora a circulação sanguínea e diminui o risco de doenças cardiovasculares. Além de auxiliar na queima de calorias e no controle do peso, a atividade física contribui para manter o corpo saudável, aumentando a imunidade e a resistência contra infecções e outras enfermidades.</p>
+            </div>
+            <div class="beneficio">
+                <img src="assets/img/icone-mao.png" alt="icone-mao">
+                <h3>Maior Disposição e Bem-Estar</h3>
+                <p>Treinar com regularidade renova as energias, afasta a fadiga e deixa você mais preparado para enfrentar os desafios do dia a dia. Durante os exercícios, o corpo libera endorfinas , responsáveis pela sensação de prazer e felicidade, que ajudam a reduzir o estresse e a ansiedade.</p>
+            </div>
+        </div>
+        <div class="beneficios-coluna2">
+            <div class="beneficio">
+                <img src="assets/img/icone-grafico.png" alt="icone-grafico">
+                <h3>Qualidade de Vida em Movimento</h3>
+                <p>A prática de atividades físicas aumenta a flexibilidade e a mobilidade, tornando o corpo mais preparado para as tarefas do dia a dia e reduzindo o risco de lesões.</p>
+            </div>
+            <div class="beneficio">
+                <img src="assets/img/icone-corpo.png" alt="icone-corpo">
+                <h3>Força Mental e Autoconfiança</h3>
+                <p>Começar um programa de exercícios é um passo importante para criar hábitos saudáveis e desenvolver disciplina. Cada meta alcançada e cada evolução percebida no corpo refletem em mais confiança, autoestima e motivação para seguir em frente.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-home-sem">
+        <h2>Comece Agora Mesmo</h2>
+        <a href="#" class="btn-home-sem">Inscreva-se</a>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <img class="logo-footer" src="assets/img/logo.png" alt="Logo do rodapé">
+    <img class="redes-sociais" src="assets/img/RedesSociais.png" alt="Redes Sociais">
+    <p>&copy; SPARTA. Todos os direitos reservados.</p>
+</footer>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

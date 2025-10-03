@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sparta - Admin Professores</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-cabecalho">
+            <img class="logo-cabecalho" src="assets/img/logo.png" alt="Logo da SPARTA">
+        </div>
+        <nav class="nav">
+            <a href="homecomusuario.html">HOME</a>
+        </nav>
+    </header>
+
+    <main class="main-aluno">
+        <div class="container-aluno">
+            <h1 class="titulo-aluno">Página Administrador</h1>
+
+            <section class="perfil-info">
+                <p class="saudacao">Olá, Admin <span class="icone-editar"><a href="editar-professor.html"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar Perfil"></a></span></p>
+                <div class="opcoes-aluno">
+                    <button class="btn-sair">
+                        <a href="login.html" class="link-sair">
+                            <img src="assets/img/sair 1.png" alt="Ícone de Sair" class="img-sair"> Sair
+                        </a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="cards-resumo cards-admin">
+                <div class="card-resumo">
+                    <p>Total de Professores</p>
+                    <span class="numero-resumo">3</span>
+                </div>
+                <div class="card-resumo">
+                    <p>Aulas liberadas</p>
+                    <span class="numero-resumo">2</span>
+                </div>
+                 <div class="card-resumo">
+                    <p>Total de aulas</p>
+                    <span class="numero-resumo">3</span>
+                </div>
+            </section>
+
+            <section class="grade-aulas">
+                <div class="abas-admin">
+                    <button class="aba-botao ativo">Professores</button>
+                    <a href="PaginaAdminCriandoaula.html" class="aba-botao">Aulas</a>
+                    <a href="PaginaAdminRelatorios.html" class="aba-botao">Relatórios</a>
+                </div>
+
+                <div class="conteudo-grade">
+                    <div class="header-admin-aulas">
+                        <h2 class="titulo-grade">Professores</h2>
+                        <div class="btn-adicionar-aula-admin">
+                            <a href="adicionar-professor.html">
+                                <span class="texto-adicionar">Adicionar</span>
+                                <img src="assets/img/iconeadicionar.png" alt="Ícone de Adicionar" class="img-adicionar-admin">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="subtitulo-grade">Gerencie os professores e suas modalidades</p>
+
+                    <div class="professores-grid">
+                        
+                        <div class="card-professor">
+                            <div class="professor-header">
+                                <h3>Mariana Oliveira</h3>
+                                <div class="acoes-professor">
+                                    <a href="editar-professor.html" class="icone-acao"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar" class="img-acao"></a> 
+                                    <button class="btn-deletar-aula icone-acao"><img src="assets/img/lixeira.png" alt="Ícone de Excluir" class="img-acao"></button> 
+                                </div>
+                            </div>
+                            <div class="professor-info-linha">
+                                <img src="assets/img/icone-professor.png" alt="ícone de Professor" class="icone-info">
+                                <span>Mariana@gmail.com</span>
+                            </div>
+                            <div class="modalidades-info">
+                                <span class="label-modalidade">Modalidades:</span>
+                                <span class="tag-modalidade zumba">Zumba</span>
+                            </div>
+                        </div>
+
+                        <div class="card-professor">
+                            <div class="professor-header">
+                                <h3>Ana Costa</h3>
+                                <div class="acoes-professor">
+                                    <a href="editar-professor.html" class="icone-acao"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar" class="img-acao"></a> 
+                                    <button class="btn-deletar-aula icone-acao"><img src="assets/img/lixeira.png" alt="Ícone de Excluir" class="img-acao"></button> 
+                                </div>
+                            </div>
+                            <div class="professor-info-linha">
+                                <img src="assets/img/icone-professor.png" alt="Ícone de Professor" class="icone-info">
+                                <span>Anacosta@gmail.com</span>
+                            </div>
+                            <div class="modalidades-info">
+                                <span class="label-modalidade">Modalidades:</span>
+                                <span class="tag-modalidade yoga">Yoga</span>
+                            </div>
+                        </div>
+
+                        <div class="card-professor">
+                            <div class="professor-header">
+                                <h3>João Bastos</h3>
+                                <div class="acoes-professor">
+                                    <a href="editar-professor.html" class="icone-acao"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar" class="img-acao"></a> 
+                                    <button class="btn-deletar-aula icone-acao"><img src="assets/img/lixeira.png" alt="Ícone de Excluir" class="img-acao"></button> 
+                                </div>
+                            </div>
+                            <div class="professor-info-linha">
+                                <img src="assets/img/icone-professor.png" alt="Ícone de Professor" class="icone-info">
+                                <span>JoaoBastos@gmail.com</span>
+                            </div>
+                            <div class="modalidades-info">
+                                <span class="label-modalidade">Modalidades:</span>
+                                <span class="tag-modalidade pilates">Pilates</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img class="logo-footer" src="assets/img/logo.png" alt="Logo do rodapé">
+        <img class="redes-sociais" src="assets/img/RedesSociais.png" alt="Redes Sociais"> 
+        <p>&copy; SPARTA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

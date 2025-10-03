@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sparta - Relatórios</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-cabecalho">
+            <img class="logo-cabecalho" src="assent/img/logo.png" alt="Logo da SPARTA">
+        </div>
+        <nav class="nav">
+            <a href="homecomusuario.html">HOME</a>
+        </nav>
+    </header>
+
+    <main class="main-aluno">
+        <div class="container-aluno">
+            <h1 class="titulo-aluno">Página Professor - Relatórios</h1>
+
+            <section class="perfil-info">
+                <p class="saudacao">Olá, João <span class="icone-editar"><a href="editar-professor.html"><img src="assets/img/Iconeeditar.png" alt="Editar Perfil"></a></span></p>
+                <div class="opcoes-aluno">
+                    <button class="btn-sair">
+                        <a href="login.html" class="link-sair">
+                            <img src="assets/img/sair 1.png" alt="Sair" class="img-sair"> Sair
+                        </a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="cards-resumo">
+                <div class="card-resumo">
+                    <p>Total de Aulas</p>
+                    <span class="numero-resumo">1</span>
+                </div>
+                <div class="card-resumo">
+                    <p>Aulas liberadas</p>
+                    <span class="numero-resumo">2</span>
+                </div>
+            </section>
+
+            <section class="grade-aulas">
+                <div class="abas-grade">
+                    <a href="pagina-professor-aulas.html" class="aba-botao">Aulas</a>
+                    <button class="aba-botao ativo">Relatórios</button>
+                </div>
+
+                <div class="conteudo-grade">
+                    <h2 class="titulo-grade">Relatórios</h2>
+                    <p class="subtitulo-grade">Visualize o desempenho das aulas e a frequência dos alunos</p>
+
+                    <div class="relatorios-grid-topo">
+                        <div class="card-relatorio-pequeno">
+                            <p class="titulo-relatorio">Relatórios de frequência do aluno</p>
+                            <div class="placeholder-grafico"></div>
+                        </div>
+                        <div class="card-relatorio-pequeno">
+                            <p class="titulo-relatorio">Relatório de frequência de aulas</p>
+                            <div class="placeholder-grafico"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-relatorio-grande">
+                        <p class="titulo-relatorio">Ocupação por modalidade</p>
+                        <div class="placeholder-grafico"></div>
+                    </div>
+                    
+                    <div class="card-relatorio-grande">
+                        <p class="titulo-relatorio">Aulas de alta e baixa demanda</p>
+                        <div class="placeholder-grafico"></div>
+                    </div>
+
+                    <div class="card-relatorio-grande">
+                        <p class="titulo-relatorio">Adesão de novos alunos</p>
+                        <div class="placeholder-grafico"></div>
+                    </div>
+                    <div class="card-relatorio-grande">
+                        <p class="titulo-relatorio">Relatório por aula</p>
+                        <div class="placeholder-grafico"></div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img class="logo-footer" src="assets/img/logo.png" alt="Logo do rodapé">
+        <img class="redes-sociais" src="assets/img/RedesSociais.png" alt="Redes Sociais"> 
+        <p>&copy; SPARTA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

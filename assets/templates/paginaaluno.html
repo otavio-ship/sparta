@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sparta - Área do Aluno</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-cabecalho">
+            <img class="logo-cabecalho" src="assets/img/logo.png" alt="Logo da SPARTA">
+        </div>
+        <nav class="nav">
+            <a href="homecomusuario.html">HOME</a>
+            </nav>
+    </header>
+
+    <main class="main-aluno">
+        <div class="container-aluno">
+            <h1 class="titulo-aluno">Página Aluno</h1>
+
+            <section class="perfil-info">
+                <p class="saudacao">Olá, Carlos <span class="icone-editar"><a href="editar-aluno.html">&#9998;</a></span></p>
+                <div class="opcoes-aluno">
+                    <button class="btn-sair">
+                        <a href="login.html" class="link-sair">
+                            <img src="assets/img/sair 1.png" alt="Sair" class="img-sair"> Sair
+                        </a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="cards-resumo">
+                <div class="card-resumo">
+                    <p>Total de inscrições</p>
+                    <span class="numero-resumo">0</span>
+                </div>
+                <div class="card-resumo">
+                    <p>Aulas Disponíveis</p>
+                    <span class="numero-resumo">2</span>
+                </div>
+            </section>
+
+            <section class="grade-aulas">
+                <div class="abas-grade">
+                    <button class="aba-botao ativo">Grade de Horários</button>
+                    <a href="PaginaAlunoinscrições.html" class="aba-botao">Minhas Inscrições</a>
+                </div>
+
+                <div class="conteudo-grade">
+                    <h2 class="titulo-grade">Grade de Horários</h2>
+                    <p class="subtitulo-grade">Visualize seus horários de aula e faça suas inscrições</p>
+
+                    <div class="aulas-grid">
+                        
+                        <div class="card-aula zumba">
+                            <div class="detalhes-aula">
+                                <span class="nome-aula zumba">Zumba</span>
+                                <span class="data-aula">27/01/25</span>
+                                <div class="info-professor">
+                                    <span class="icone-horario">&#x23F1;</span>
+                                    <span>19:00 - 19:40</span>
+                                </div>
+                                <div class="info-professor">
+                                    <span class="icone-pessoa">&#x1F464;</span>
+                                    <span>Mariana</span>
+                                </div>
+                                <div class="info-inscricao">
+                                    <span class="icone-usuarios">&#x1F465;</span>
+                                    <span>7/15</span>
+                                </div>
+                            </div>
+                            <button class="btn-inscrever-se">Inscrever-se</button>
+                        </div>
+
+                        <div class="card-aula yoga">
+                            <div class="detalhes-aula">
+                                <span class="nome-aula yoga">Yoga</span>
+                                <span class="data-aula">15/04/25</span>
+                                <div class="info-professor">
+                                    <span class="icone-horario">&#x23F1;</span>
+                                    <span>19:00 - 19:40</span>
+                                </div>
+                                <div class="info-professor">
+                                    <span class="icone-pessoa">&#x1F464;</span>
+                                    <span>Ana Costa</span>
+                                </div>
+                                <div class="info-inscricao">
+                                    <span class="icone-usuarios">&#x1F465;</span>
+                                    <span>0/15</span>
+                                </div>
+                            </div>
+                            <button class="btn-inscrever-se">Inscrever-se</button>
+                        </div>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <img class="logo-footer" src="assets/img/logo.png" alt="Logo do rodapé">
+        <img class="redes-sociais" src="assets/img/RedesSociais.png" alt="Redes Sociais"> 
+        <p>&copy; SPARTA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

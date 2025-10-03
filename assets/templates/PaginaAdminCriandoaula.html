@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sparta - Área do Administrador</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-cabecalho">
+            <img class="logo-cabecalho" src="assets/img/logo.png" alt="Logo da SPARTA">
+        </div>
+        <nav class="nav">
+            <a href="homecomusuario.html">HOME</a>
+        </nav>
+    </header>
+
+    <main class="main-aluno">
+        <div class="container-aluno">
+            <h1 class="titulo-aluno">Página Admin - Aulas</h1>
+
+            <section class="perfil-info">
+                <p class="saudacao">Olá, Admin <span class="icone-editar"><a href="editar-admin.html"><img src="assets/img/iconeeditar.png" alt="Ícone Editar Perfil"></a></span></p>
+                <div class="opcoes-aluno">
+                    <button class="btn-sair">
+                        <a href="login.html" class="link-sair">
+                            <img src="assets/img/sair 1.png" alt="Ícone Sair" class="img-sair"> Sair
+                        </a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="cards-resumo cards-admin">
+                <div class="card-resumo">
+                    <p>Total de Aulas</p>
+                    <span class="numero-resumo">3</span>
+                </div>
+                <div class="card-resumo">
+                    <p>Aulas liberadas</p>
+                    <span class="numero-resumo">2</span>
+                </div>
+                 <div class="card-resumo">
+                    <p>Professores</p>
+                    <span class="numero-resumo">3</span>
+                </div>
+            </section>
+
+            <section class="grade-aulas">
+                <div class="abas-admin">
+                    <a href="PaginaAdminCriandoaula.html" class="aba-botao">Professores</a>
+                    <button class="aba-botao ativo">Aulas</button>
+                    <a href="PaginaAdminRelatorios.html" class="aba-botao">Relatórios</a>
+                </div>
+
+                <div class="conteudo-grade">
+                    <div class="header-admin-aulas">
+                        <h2 class="titulo-grade">Aulas</h2>
+                        <div class="btn-adicionar-aula-admin">
+                            <a href="adicionar-aula.html">
+                                <span class="texto-adicionar">Adicionar</span>
+                                <img src="assets/img/iconeadicionar.png" alt="Ícone de Adicionar" class="img-adicionar-admin">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="subtitulo-grade">Gerencie a grade de aulas da academia</p>
+
+                    <h3 class="dia-semana">Segunda-Feira</h3>
+                    <div class="aulas-horizontal">
+                        <div class="card-aula-admin zumba">
+                            <div class="card-header-admin">
+                                <span class="nome-aula zumba">Zumba</span> 
+                                <div class="acoes-aula-prof">
+                                    <a href="editar-aula.html" class="icone-acao"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar" class="img-acao"></a> 
+                                    <button class="btn-deletar-aula icone-acao"><img src="assets/img/lixeira.png" alt="Ícone de Excluir" class="img-acao"></button> 
+                                </div>
+                            </div>
+                            <div class="detalhes-aula-prof-vertical">
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/horário.png" alt="Ícone do relógio de Horário" class="icone-aula-prof">
+                                    <span>19:00 - 19:40</span>
+                                </div>
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/icone-professor.png" alt="Ícone de Professor" class="icone-aula-prof">
+                                    <span>Mariana</span>
+                                </div>
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/LotaçãoTotal.png" alt="Ícone de Lotação" class="icone-aula-prof">
+                                    <span>0/15</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    <h3 class="dia-semana">Terça-Feira</h3>
+                    <div class="aulas-horizontal">
+                        <div class="card-aula-admin yoga">
+                            <div class="card-header-admin">
+                                <span class="nome-aula yoga">Yoga</span> 
+                                <div class="acoes-aula-prof">
+                                    <a href="editar-aula.html" class="icone-acao"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar" class="img-acao"></a> 
+                                    <button class="btn-deletar-aula icone-acao"><img src="assets/img/lixeira.png" alt="Ícone de Excluir" class="img-acao"></button> 
+                                </div>
+                            </div>
+                            <div class="detalhes-aula-prof-vertical">
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/horário.png" alt="Ícone do relógio de Horário" class="icone-aula-prof">
+                                    <span>10:00 - 11:00</span>
+                                </div>
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/icone-professor.png" alt="Ícone de Professor" class="icone-aula-prof">
+                                    <span>Ana Costa</span>
+                                </div>
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/LotaçãoTotal.png" alt="Ícone de Lotação" class="icone-aula-prof">
+                                    <span>0/15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="dia-semana">Quarta-Feira</h3>
+                    <div class="aulas-horizontal">
+                        <div class="card-aula-admin pilates">
+                            <div class="card-header-admin">
+                                <span class="nome-aula pilates">Pilates</span> 
+                                <div class="acoes-aula-prof">
+                                    <a href="editar-aula.html" class="icone-acao"><img src="assets/img/iconeeditar.png" alt="Ícone de Editar" class="img-acao"></a> 
+                                    <button class="btn-deletar-aula icone-acao"><img src="assets/img/lixeira.png" alt="Ícone de Excluir" class="img-acao"></button> 
+                                </div>
+                            </div>
+                            <div class="detalhes-aula-prof-vertical">
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/horário.png" alt="Ícone do relógio de Horário" class="icone-aula-prof">
+                                    <span>9:00 - 10:20</span>
+                                </div>
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/icone-professor.png" alt="Ícone de Professor" class="icone-aula-prof">
+                                    <span>João Santos</span>
+                                </div>
+                                <div class="info-professor-linha">
+                                    <img src="assets/img/LotaçãoTotal.png" alt="Lotação" class="icone-aula-prof">
+                                    <span>0/15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img class="logo-footer" src="assets/img/logo.png" alt="Logo do rodapé">
+        <img class="redes-sociais" src="assets/img/RedesSociais.png" alt="Redes Sociais"> 
+        <p>&copy; SPARTA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
